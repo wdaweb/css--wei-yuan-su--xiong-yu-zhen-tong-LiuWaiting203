@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 300px;
+      height: 120px;
+      background: #000;
+      list-style: none;
+      
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .box::before{
+      content: '';
+      width: 663px;
+      height: 20px;
+      background: linear-gradient(90deg, transparent 19px, black 1px) repeat-x left top/20px 20px;
+
+      position: absolute;
+      top: 0;
+      left: -188px;
+      z-index: 1;
+    }
+
+
+    .right {
+      width: 300px;
+      height: 120px;
+      border: 1px solid black;
+      background: linear-gradient(#f9fb9d, #c8cb69 ,#f9fb9d);
+
+      position: absolute;
+      top: 0;
+      left: 60%;
+    }
+
+    .right::before{
+      content: "";
+      width: 60px;
+      height: 80px;
+      border: 1px solid black;
+      border-radius: 0px 10px 10px 0px;
+      background: linear-gradient(#ffffff, #b6b4b4, #ffffff);
+
+      position: absolute;
+      top: 15%;
+      right: -20.5%;
+    }
+
+    .right::after{
+      content: "";
+      width: 100px;
+      border: 1px solid black;
+      background: linear-gradient(#ffffff, #b6b4b4, #ffffff);
+
+      position: absolute;
+      top: 50%;
+      right: -54%;
+    }
+
+    .left {
+      width: 300px;
+      height: 120px;
+      border: 1px solid black;
+      background: linear-gradient(#ffffff, #b6b4b4, #ffffff);
+
+      position: absolute;
+      top: 0;
+      right: 60%;
+    }
+
+    .left::before{
+      content: "";
+      width: 60px;
+      height: 80px;
+      border: 1px solid black;
+      background: linear-gradient(#ffffff, #b6b4b4, #ffffff);
+
+      position: absolute;
+      top: 15%;
+      left: -20.5%;
+    }
+
+    .left::after{
+      content: "";
+      width: 55px;
+      height: 160px;
+      border: 1px solid black;
+      border-radius: 10px 10px;
+      background: linear-gradient(#ffffff, #b6b4b4, #ffffff);
+
+      position: absolute;
+      bottom: -15%;
+      left: -39%;
+    }
+
+    .left p {
+      color:grey;
+
+      position: absolute;
+      top: 70%; 
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="right"></div>
+    <div class="left">
+      <p>MADE IN TAIWAN</p>
+    </div>
+  </div>
+</body>
+</html>

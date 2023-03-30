@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .head {
+      width: 600px;
+      height: 600px;
+      background: black;
+      border-radius: 50%;
+      
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .head::before{
+      content: '';
+      width: 50px;
+      height: 50px;
+      background: #fff;
+
+      position: absolute;
+      bottom: 70px;
+      left: 230px;
+      transform: skewX(50deg);
+    }
+
+    .head::after{
+      content: '';
+      width: 50px;
+      height: 50px;
+      background: #fff;
+
+      position: absolute;
+      bottom: 70px;
+      right: 240px;
+      transform: skewX(-50deg);
+    }
+
+    .mouth {
+      width: 250px;
+      height: 200px;
+      background: white;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .mouth::before{
+      content:"";
+      width: 150px;
+      height: 60px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    } 
+
+    .mouth::after{
+      content:"";
+      width: 60px;
+      height: 40px;
+      background: #000;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+    }
+
+    .left-face {
+      width: 85px;
+      height: 85px;
+      background:radial-gradient(white 50%, black 50%);
+      border-radius: 50%;
+
+      position: absolute;
+      top: 10%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+    }
+
+    .left-face::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background:radial-gradient(black 50%, white 50%);
+      border-radius: 50%;
+
+      position: absolute;
+      top: 100%;
+      left: 95%;
+    }
+
+    .left-face::after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background:red;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 230%;
+      right: -30%;
+    }
+
+    .right-face {
+      width: 85px;
+      height: 85px;
+      background:radial-gradient(white 50%, black 50%);
+      border-radius: 50%;
+
+      position: absolute;
+      top: 10%;
+      right: 5%;
+      transform: translate(-45%, -50%);
+    }
+
+    .right-face::before {
+      content: "";
+      width: 100px;
+      height: 100px;
+      background:radial-gradient(black 50%, white 50%);
+      border-radius: 50%;
+
+      position: absolute;
+      top: 100%;
+      right: 70%;
+    }
+
+    .right-face::after {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background:red;
+      border-radius: 50%;
+
+      position: absolute;
+      top: 230%;
+      right: -130%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="head">
+    <div class="mouth"></div>
+    <div class="left-face"></div>
+    <div class="right-face"></div>
+  </div>
+</body>
+</html>
